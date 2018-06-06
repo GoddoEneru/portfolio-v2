@@ -22,14 +22,14 @@
       line-height: 100px; } }
   @media (max-width: 600px) {
     .accueil .titreb {
-      top: calc(100vh - 70px);
+      top: calc(100% - 70px);
       letter-spacing: -2px;
       font-size: 70px;
       height: 70px;
       line-height: 70px; } }
   @media (max-width: 450px) {
     .accueil .titreb {
-      top: calc(100vh - 45px);
+      top: calc(100% - 45px);
       font-size: 45px;
       letter-spacing: -1px;
       height: 45px;
@@ -68,11 +68,12 @@
     .accueil .titreh {
       letter-spacing: -1px;
       font-size: 38px;
+      bottom: 85%;
       height: 38px;
       line-height: 38px; } }
   @media (max-width: 450px) {
     .accueil .titreh {
-      bottom: 87vh; } }
+      bottom: 87%; } }
 
 .accueil .slider {
   width: 70vw;
@@ -89,6 +90,10 @@
   justify-content: center;
   align-items: center;
   overflow: hidden; }
+  @media (max-width: 600px) {
+    .accueil .slider {
+      height: 70%;
+      top: 15%; } }
   .accueil .slider p {
     color: #fff;
     text-transform: none;

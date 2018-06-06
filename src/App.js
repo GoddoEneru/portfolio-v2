@@ -84,9 +84,21 @@ class App extends Component {
     }
 
   render() {
+
+      let heightP = window.innerHeight;
+      let widthP = window.innerWidth;
+      let style = {
+          height: "auto",
+      };
+      if (widthP < 600){
+          style = {
+              height: heightP + "px",
+          }
+      }
+
     return (
         <BrowserRouter basepath>
-                <div className="App">
+                <div className="App" style={style}>
                     <Dl/>
                     <Menu/>
                     <Route exact path="/" component={Accueil} />

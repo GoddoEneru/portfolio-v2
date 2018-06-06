@@ -22,14 +22,14 @@
       line-height: 100px;
     }
     @media (max-width: 600px){
-      top:calc(100vh - 70px);
+      top:calc(100% - 70px);
       letter-spacing: -2px;
       font-size: 70px;
       height: 70px;
       line-height: 70px;
     }
     @media (max-width: 450px){
-      top:calc(100vh - 45px);
+      top:calc(100% - 45px);
       font-size: 45px;
       letter-spacing: -1px;
       height: 45px;
@@ -71,11 +71,12 @@
     @media (max-width: 600px){
       letter-spacing: -1px;
       font-size: 38px;
+      bottom:85%;
       height: 38px;
       line-height: 38px;
     }
     @media (max-width: 450px){
-      bottom: 87vh;
+      bottom: 87%;
     }
   }
   .slider{
@@ -93,6 +94,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    @media (max-width: 600px){
+      height: 70%;
+      top: 15%;
+    }
     p{
       color: #fff;
       text-transform: none;
