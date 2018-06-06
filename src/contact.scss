@@ -1,18 +1,4 @@
 .contact{
-  .titreb{
-    font-size: 11em;
-    position: fixed;
-    top:83vh;
-    height: 19vh;
-    line-height: 19vh;
-    letter-spacing: -3px;
-    z-index: 3;
-    text-shadow: 6px -6px #000000;
-    overflow: hidden;
-    p{
-      transition: 0.4s ease-out;
-    }
-  }
   .titreh{
     span{
       width: calc(15vw - 30px);
@@ -61,6 +47,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    @media (max-width: 600px){
+      height: 70%;
+      top: 15%;
+    }
     p{
       color: #fff;
       text-transform: none;

@@ -15,6 +15,7 @@
       right: 20vw;
       background: rgba(0, 0, 0, 0.7);
       border: 1px solid #fff;
+      top: calc(50 - 48px);
       padding: 0 5px; } }
   .Choix .barre {
     display: block;
@@ -49,21 +50,26 @@
     .Choix .nbSlide div {
       height: 10vh;
       overflow: hidden; }
+      @media (max-width: 600px) {
+        .Choix .nbSlide div {
+          height: 48px; } }
       .Choix .nbSlide div .zero {
         position: absolute;
         text-align: left; }
       .Choix .nbSlide div p {
         text-align: right;
-        font-size: 5em;
+        font-size: 80px;
         height: 10vh;
         line-height: 10vh;
         transition: 0.4s ease-out; }
         @media (max-width: 1300px) {
           .Choix .nbSlide div p {
-            font-size: 4em; } }
-        @media (max-width: 1300px) {
+            font-size: 64px; } }
+        @media (max-width: 600px) {
           .Choix .nbSlide div p {
-            font-size: 3em; } }
+            font-size: 48px;
+            line-height: 48px;
+            height: 48px; } }
 
 .lienProjet {
   position: fixed;

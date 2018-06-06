@@ -14,6 +14,7 @@
     right: 20vw;
     background: rgba(0,0,0,0.7);
     border: 1px solid #fff;
+    top: calc(50 - 48px);
     padding: 0 5px;
   }
   .barre{
@@ -55,21 +56,26 @@
     div{
       height: 10vh;
       overflow: hidden;
+      @media (max-width: 600px){
+        height: 48px;
+      }
       .zero{
         position: absolute;
         text-align: left;
       }
       p{
         text-align: right;
-        font-size: 5em;
+        font-size: 80px;
         height: 10vh;
         line-height: 10vh;
         transition: 0.4s ease-out;
         @media (max-width: 1300px){
-          font-size: 4em;
+          font-size: 64px;
         }
-        @media (max-width: 1300px){
-          font-size: 3em;
+        @media (max-width: 600px){
+          font-size: 48px;
+          line-height: 48px;
+          height: 48px;
         }
       }
     }

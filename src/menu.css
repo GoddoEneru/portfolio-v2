@@ -59,11 +59,17 @@
   z-index: 98;
   opacity: 0;
   transition: 0.2s ease-out; }
+  @media (max-width: 600px) {
+    .allMenu .menu {
+      height: 100%; } }
   .allMenu .menu div {
     height: 33.3333vh;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media (max-width: 600px) {
+      .allMenu .menu div {
+        height: 33.3333%; } }
     .allMenu .menu div a {
       color: #000;
       text-decoration: none;

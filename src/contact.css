@@ -1,16 +1,3 @@
-.contact .titreb {
-  font-size: 11em;
-  position: fixed;
-  top: 83vh;
-  height: 19vh;
-  line-height: 19vh;
-  letter-spacing: -3px;
-  z-index: 3;
-  text-shadow: 6px -6px #000000;
-  overflow: hidden; }
-  .contact .titreb p {
-    transition: 0.4s ease-out; }
-
 .contact .titreh {
   display: flex;
   flex-direction: row;
@@ -57,6 +44,10 @@
   justify-content: center;
   align-items: center;
   overflow: hidden; }
+  @media (max-width: 600px) {
+    .contact .slider {
+      height: 70%;
+      top: 15%; } }
   .contact .slider p {
     color: #fff;
     text-transform: none;
