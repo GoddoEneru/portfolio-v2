@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bd92be5-2fa8-4efa-93f2-d67716860a2a" name="Default" comment="" />
+    <list default="true" id="2bd92be5-2fa8-4efa-93f2-d67716860a2a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -22,6 +24,15 @@
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -53,6 +64,7 @@
         <option value="$PROJECT_DIR$/src/Contact.js" />
         <option value="$PROJECT_DIR$/src/choix.scss" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -171,7 +183,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88901000" />
+    <option name="totallyTimeSpent" value="89528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1719" height="932" extended-state="0" />
@@ -467,9 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/menu.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -595,6 +604,13 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
         </state>
       </provider>
     </entry>
