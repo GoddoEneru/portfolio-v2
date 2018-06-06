@@ -1,0 +1,142 @@
+.projets .titreb {
+  font-size: 176px;
+  position: fixed;
+  top: calc(100vh - 176px);
+  height: 176px;
+  line-height: 176px;
+  letter-spacing: -3px;
+  z-index: 3;
+  text-shadow: 6px -6px #000000; }
+  @media (max-width: 1200px) {
+    .projets .titreb {
+      top: calc(100vh - 140px);
+      font-size: 140px;
+      height: 140px;
+      line-height: 140px; } }
+  @media (max-width: 900px) {
+    .projets .titreb {
+      top: calc(100vh - 100px);
+      letter-spacing: -2px;
+      font-size: 100px;
+      height: 100px;
+      line-height: 100px; } }
+  @media (max-width: 600px) {
+    .projets .titreb {
+      top: calc(100vh - 70px);
+      letter-spacing: -2px;
+      font-size: 70px;
+      height: 70px;
+      line-height: 70px; } }
+  @media (max-width: 400px) {
+    .projets .titreb {
+      top: calc(100vh - 50px);
+      font-size: 50px;
+      letter-spacing: -1px;
+      height: 50px;
+      line-height: 50px; } }
+
+.projets .active {
+  position: relative; }
+
+.projets .active:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 10px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse; }
+
+.projets .active:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -7px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse; }
+
+.projets .titreh {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 73px;
+  position: fixed;
+  bottom: 85vh;
+  height: 73px;
+  line-height: 73px;
+  letter-spacing: -2px;
+  z-index: 2; }
+  .projets .titreh .glitch {
+    position: relative; }
+    .projets .titreh .glitch:after {
+      content: attr(data-text);
+      position: absolute;
+      left: -10px;
+      text-shadow: -1px 0 red;
+      top: 3px;
+      color: #ffffff;
+      background: #000000;
+      overflow: hidden;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-anim 2s 3 linear alternate-reverse; }
+    .projets .titreh .glitch:before {
+      content: attr(data-text);
+      position: absolute;
+      left: 5px;
+      text-shadow: 1px 0 blue;
+      top: -2px;
+      color: #ffffff;
+      background: #000000;
+      overflow: hidden;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-anim-2 3s 3 linear alternate-reverse; }
+  .projets .titreh span {
+    width: calc(15vw - 30px);
+    margin-right: 30px;
+    height: 8px;
+    background: #ffffff; }
+  .projets .titreh p {
+    text-shadow: 3px 3px #000000; }
+  @media (max-width: 900px) {
+    .projets .titreh {
+      font-size: 50px;
+      height: 50px;
+      line-height: 50px; } }
+  @media (max-width: 600px) {
+    .projets .titreh {
+      letter-spacing: -1px;
+      font-size: 38px;
+      height: 38px;
+      line-height: 38px; } }
+
+.projets .slider {
+  width: 70vw;
+  height: 70vh;
+  position: fixed;
+  top: 15vh;
+  left: 15vw;
+  background: #ffffff;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+  .projets .slider a {
+    transition: 0.4s ease-out;
+    width: 100%;
+    height: 100%;
+    flex: none; }
+  .projets .slider a:nth-of-type(1) {
+    background: blue; }
+  .projets .slider a:nth-of-type(2) {
+    background: red; }
+  .projets .slider a:nth-of-type(3) {
+    background: yellow; }

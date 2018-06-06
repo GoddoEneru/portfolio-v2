@@ -1,0 +1,33 @@
+.dl {
+  position: fixed;
+  display: flex;
+  z-index: 4;
+  flex-direction: column;
+  align-items: center;
+  bottom: 20px;
+  width: 20px;
+  right: 20px;
+  font-size: 0.85em;
+  color: #ffffff;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  p{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    line-height: 20px;
+    width: 100%;
+  }
+  span{
+    width: 1px;
+    height: 30px;
+    background: #ffffff;
+    margin: 20px 0;
+  }
+  a{
+    width:100%;
+    cursor: pointer;
+    img{
+      width: 100%;
+    }
+  }
+}

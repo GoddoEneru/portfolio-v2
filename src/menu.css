@@ -1,0 +1,115 @@
+.allMenu .closeMenu, .allMenu .openMenu {
+  position: fixed;
+  width: 60px;
+  top: 20px;
+  height: 56px;
+  cursor: pointer;
+  right: 20px; }
+  @media (max-width: 450px) {
+    .allMenu .closeMenu, .allMenu .openMenu {
+      height: calc(56px / 3 * 2);
+      width: 40px; } }
+
+.allMenu .openMenu {
+  z-index: 97;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end; }
+  .allMenu .openMenu:hover span:last-of-type, .allMenu .openMenu:hover span:nth-of-type(2) {
+    width: 40px; }
+    @media (max-width: 450px) {
+      .allMenu .openMenu:hover span:last-of-type, .allMenu .openMenu:hover span:nth-of-type(2) {
+        width: 20px; } }
+  .allMenu .openMenu span {
+    width: 40px;
+    height: 6px;
+    background: #ffffff;
+    transition: 0.2s ease-out; }
+    @media (max-width: 450px) {
+      .allMenu .openMenu span {
+        width: 20px;
+        height: 3px; } }
+    .allMenu .openMenu span:first-of-type {
+      margin-top: 0; }
+    .allMenu .openMenu span:nth-of-type(2) {
+      width: 25px; }
+      @media (max-width: 450px) {
+        .allMenu .openMenu span:nth-of-type(2) {
+          width: 12.5px; } }
+    .allMenu .openMenu span:last-of-type {
+      width: 33px; }
+      @media (max-width: 450px) {
+        .allMenu .openMenu span:last-of-type {
+          width: 16.5px; } }
+
+.allMenu .closeMenu {
+  z-index: 99;
+  border: 1px solid #000; }
+
+.allMenu .menu {
+  width: 100vw;
+  visibility: hidden;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  z-index: 98;
+  opacity: 0;
+  transition: 0.2s ease-out; }
+  .allMenu .menu div {
+    height: 33.3333vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .allMenu .menu div a {
+      color: #000;
+      text-decoration: none;
+      font-size: 5em; }
+      @media (max-width: 600px) {
+        .allMenu .menu div a {
+          font-size: 3em; } }
+      .allMenu .menu div a.active {
+        padding: 0 20px;
+        color: #ffffff;
+        background: #000000;
+        position: relative; }
+        @media (max-width: 450px) {
+          .allMenu .menu div a.active {
+            padding: 0 10px; } }
+        .allMenu .menu div a.active:after {
+          content: attr(data-text);
+          padding: 0 20px;
+          position: absolute;
+          left: 5px;
+          text-shadow: -1px 0 red;
+          top: 0;
+          color: #ffffff;
+          background: #000000;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          animation: noise-anim 2s infinite linear alternate-reverse; }
+          @media (max-width: 450px) {
+            .allMenu .menu div a.active:after {
+              padding: 0 10px; } }
+        .allMenu .menu div a.active:before {
+          content: attr(data-text);
+          position: absolute;
+          padding: 0 20px;
+          left: -7px;
+          text-shadow: 1px 0 blue;
+          top: 0;
+          color: #ffffff;
+          background: #000000;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          animation: noise-anim-2 3s infinite linear alternate-reverse; }
+          @media (max-width: 450px) {
+            .allMenu .menu div a.active:before {
+              padding: 0 10px; } }
+
+.allMenu .open {
+  visibility: visible;
+  opacity: 1; }

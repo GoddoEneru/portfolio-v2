@@ -1,0 +1,90 @@
+.Choix {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  right: 0;
+  z-index: 10;
+  top: calc(45vh - 40px);
+  overflow: hidden; }
+  @media (max-width: 1300px) {
+    .Choix {
+      right: 20px; } }
+  @media (max-width: 600px) {
+    .Choix {
+      right: 20vw;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid #fff;
+      padding: 0 5px; } }
+  .Choix .barre {
+    display: block;
+    width: 3vw;
+    margin-left: 20px;
+    height: 8px;
+    background: #ffffff; }
+    @media (max-width: 1300px) {
+      .Choix .barre {
+        display: none; } }
+  .Choix .nbSlide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .Choix .nbSlide img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer; }
+      @media (max-width: 600px) {
+        .Choix .nbSlide img {
+          width: 25px;
+          height: 25px; } }
+    .Choix .nbSlide .up {
+      visibility: visible; }
+      .Choix .nbSlide .up.hide {
+        visibility: hidden; }
+    .Choix .nbSlide .down {
+      visibility: visible; }
+      .Choix .nbSlide .down.hide {
+        visibility: hidden; }
+    .Choix .nbSlide div {
+      height: 10vh;
+      overflow: hidden; }
+      .Choix .nbSlide div .zero {
+        position: absolute;
+        text-align: left; }
+      .Choix .nbSlide div p {
+        text-align: right;
+        font-size: 5em;
+        height: 10vh;
+        line-height: 10vh;
+        transition: 0.4s ease-out; }
+        @media (max-width: 1300px) {
+          .Choix .nbSlide div p {
+            font-size: 4em; } }
+        @media (max-width: 1300px) {
+          .Choix .nbSlide div p {
+            font-size: 3em; } }
+
+.lienProjet {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  right: 0;
+  top: 48vh;
+  overflow: hidden; }
+  @media (max-width: 1200px) {
+    .lienProjet {
+      display: none; } }
+  .lienProjet .barre {
+    display: block;
+    width: 3vw;
+    margin-left: 20px;
+    height: 8px;
+    background: #ffffff; }
+  .lienProjet a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+    height: 4vh;
+    line-height: 4vh; }
