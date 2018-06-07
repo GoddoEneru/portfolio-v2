@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import debounce from 'debounce';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 
@@ -46,7 +47,7 @@ class App extends Component {
         setTimeout(function(){
             titre.classList.remove("active");
         }, 800);
-    }
+    };
 
     handleDown = () => {
         let text = "";
@@ -81,7 +82,29 @@ class App extends Component {
         setTimeout(function(){
             titre.classList.remove("active");
         }, 800);
-    }
+    };
+
+    componentDidMount() {
+
+        document.addEventListener("wheel", debounce((e) => {
+
+            // to make it work on IE or Chrome
+            var variation = e.deltaY;
+            console.log(variation)
+
+            if ( variation > 0){
+                this.handleUp()
+            }
+
+            if ( variation < 0){
+                this.handleDown()
+            }
+
+            return false
+
+        },20),true);
+
+    };
 
   render() {
 
@@ -96,8 +119,8 @@ class App extends Component {
           }
       }
 
-    return (
-        <BrowserRouter basepath>
+      return (
+        <BrowserRouter>
                 <div className="App" style={style}>
                     <Dl/>
                     <Menu/>
