@@ -84,7 +84,7 @@ class App extends Component {
         }, 800);
     };
 
-    componentDidMount() {
+    /*componentDidMount() {
 
         document.addEventListener("wheel", debounce((e) => {
 
@@ -103,8 +103,7 @@ class App extends Component {
             return false
 
         },20),true);
-
-    };
+    };*/
 
   render() {
 
