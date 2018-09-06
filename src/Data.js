@@ -5,6 +5,12 @@ import lien3 from './img/FFP.jpg';
 
 export default [
     {
+        nom : 'E-REALITE' ,
+        description :'React.js' ,
+        image : "url(" + lien + ")",
+        lien : 'https://e-realite.herokuapp.com/',
+    }
+    ,{
         nom : 'Sword Art' ,
         description :'HTML - CSS - JS - PHP' ,
         image : "url(" + lien2 + ")",
@@ -15,11 +21,5 @@ export default [
         description :'HTML - SASS - JS' ,
         image : "url(" + lien3 + ")",
         lien : 'https://www.quentinchalopin.fr/ffp',
-    }
-    ,{
-        nom : 'SW Universe' ,
-        description :'React.js' ,
-        image : "url(" + lien + ")",
-        lien : '#',
     }
 ];

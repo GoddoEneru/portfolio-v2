@@ -8,7 +8,7 @@ export class Projets extends Component{
     render() {
         const dataProjet = Data.map( (d, index) => {
             return(
-                <a key={index} style={{background: d.image + " center/cover", transform: 'translateY(-' + (100 * (this.props.projet - 1)) + '%)'}} href={d.lien} target="_blank"/>
+                <a key={index} style={{background: d.image + " center/cover", transform: 'translateY(-' + (100 * (this.props.projet - 1)) + '%)'}} href={d.lien} target="_blank"><div><p>{d.description}</p></div></a>
             )
         });
 
