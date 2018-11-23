@@ -109,6 +109,7 @@ class App extends Component {
 
       let heightP = window.innerHeight;
       let widthP = window.innerWidth;
+      console.log(widthP);
       let style = {
           height: "auto",
       };

@@ -134,42 +134,51 @@
     .projets .slider {
       height: 70%;
       top: 15%; } }
-  .projets .slider a {
+  .projets .slider div {
     transition: 0.4s ease-out;
     width: 100%;
     height: 100%;
-    flex: none;
-    text-decoration: none; }
-    .projets .slider a:hover div {
+    flex: none; }
+    .projets .slider div:hover div {
       opacity: 1; }
-    .projets .slider a div {
+    .projets .slider div div {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 150px;
+      height: 100%;
       width: 100%;
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
       opacity: 0;
       transition: 0.3s ease-in-out; }
       @media (max-width: 600px) {
-        .projets .slider a div {
+        .projets .slider div div {
           height: 100px; } }
-      .projets .slider a div p {
+      .projets .slider div div .lienSite {
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        height: 50px;
+        width: 150px;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        box-sizing: border-box;
+        border: 2px solid #fff;
+        text-decoration: none;
+        transition: 0.3s ease-in-out; }
+        .projets .slider div div .lienSite:hover {
+          background: #000; }
+      .projets .slider div div p {
         color: #fff;
         font-size: 4.5em;
         text-shadow: 0 0 12px #fff;
         text-transform: uppercase;
         transform: translateY(-3px); }
         @media (max-width: 900px) {
-          .projets .slider a div p {
+          .projets .slider div div p {
             font-size: 3em; } }
         @media (max-width: 600px) {
-          .projets .slider a div p {
+          .projets .slider div div p {
             font-size: 1.7em; } }
-  .projets .slider a:nth-of-type(1) {
-    background: blue; }
-  .projets .slider a:nth-of-type(2) {
-    background: red; }
-  .projets .slider a:nth-of-type(3) {
-    background: yellow; }
