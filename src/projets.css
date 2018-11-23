@@ -151,9 +151,9 @@
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
       opacity: 0;
       transition: 0.3s ease-in-out; }
-      @media (max-width: 600px) {
+      @media (max-width: 768px) {
         .projets .slider div div {
-          height: 100px; } }
+          opacity: 1; } }
       .projets .slider div div .lienSite {
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
